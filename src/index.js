@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const notas = [12, 34, 54,13,22, 91, 8, 19];
+
+/* const grupos = {
+  "Andres": "Lorena",
+  "Claudia": "Pablo",
+  "Jano": "Thomas",
+  "Joshua": "Vannia",
+  "Juan": "Marisleidis",
+  "Miguel": "carlos" ? "Carlos" : "Manuel"
+} */
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App name={"Luis"} show={false} error={"Some fields are missing"} notas={notas} />
   </React.StrictMode>,
   document.getElementById('root')
 );
